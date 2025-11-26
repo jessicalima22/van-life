@@ -11,7 +11,16 @@ function App() {
           <a className='header_link'>Vans</a>
         </div>
       </header>
-      <h1>Start here</h1>
+
+      <main>
+        <div className='main_content'>
+          <h1>You got the travel plans, we got the travel vans.</h1>
+          <p>Add adventure to your life by joining the #vanlife movement.</p>
+          <p>Rent the perfect van to make your perfect road trip.</p>
+          <button className='find_your_van'>Find your van</button>
+        </div>
+      </main>
+      <footer>Ⓒ 2022 #VANLIFE</footer>
     </>
   )
 }
