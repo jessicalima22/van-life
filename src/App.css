@@ -64,7 +64,7 @@ main {
 
 .main_home {
   position: relative;
-  background-image: url("../public/backg_home.png");
+  background-image: url("./assets/backg_home.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -72,6 +72,7 @@ main {
   align-items: center;
   min-height: 387px;
   overflow-y: auto;
+  height: 100%;
 }
 
 .main_home::before {
@@ -100,6 +101,7 @@ h1 {
 }
 
 .find_your_van_button {
+  display: inline-block;
   background-color: #FF8C38;
   color: white;
   font-weight: 700;
