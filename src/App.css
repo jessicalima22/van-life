@@ -10,6 +10,16 @@ html, body, #root {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.header_link:hover{
+  text-decoration: underline;
+}
+
 body {
   font-family: inter;
   display: flex;
@@ -37,7 +47,8 @@ header > div {
 
 header > span {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  color: #000000;
 }
 
 .header_link {
@@ -48,11 +59,14 @@ header > span {
 
 main {
   flex: 1 0 auto;
+  color: #fff;
+}
+
+.main_home {
   position: relative;
   background-image: url("../public/backg_home.png");
   background-size: cover;
   background-position: center;
-  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +74,7 @@ main {
   overflow-y: auto;
 }
 
-main::before {
+.main_home::before {
   content: '';
   position: absolute;
   top: 0;
@@ -82,11 +96,10 @@ h1 {
 }
 
 .main_content p {
-  font-size: 13px;
   margin: 0.4rem 0;
 }
 
-.find_your_van {
+.find_your_van_button {
   background-color: #FF8C38;
   color: white;
   font-weight: 700;
@@ -97,6 +110,60 @@ h1 {
   padding: 0.7rem 0;
   margin-top: 2rem;
 }
+
+h2 {
+  font-size: 2rem;
+}
+
+.about_image {
+  width: 100%;
+  height: 233px;
+  object-fit: cover; 
+  object-position: center;
+}
+.main_about {
+  background-color: #FFF7ED;
+  display: flex;
+  justify-content: center;
+}
+
+.main_about_content {
+  background-color: #FFF7ED;
+  color: #161616;
+  padding: 2rem 1.5rem;
+  max-width: 550px;
+}
+
+.main_about_content p {
+  padding: 1rem 0;
+}
+
+.about_down{
+ background-color: #FFCC8D;
+ color: #161616;
+ font-weight: 700;
+ padding: 1.5rem;
+ border-radius: 5px;
+ margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.about_down_button{
+  color: #fff;
+  background-color: #161616;
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+
+
+
 
 footer {
   color: #AAAAAA;
